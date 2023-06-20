@@ -1,0 +1,242 @@
+@import "../CommonImports/main.scss";
+
+.login-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    background-color: #304258;
+     .login-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 972px;
+        height:100vh;
+        border-radius: 5px;
+        // box-shadow: 5px 5px 5px 5px lightblue;
+        padding: 40px;
+        background-color: aliceblue;
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            h1{
+                text-align: left !important;
+                font-size: 18px;
+                margin-right: 410px;
+                margin-bottom: 57px;
+                color: #304258;
+                font-weight: 400;
+            }
+            .avira-logo{
+                width:150px;
+                margin-bottom:32px;
+                margin-top:-29px;
+            }
+            label{
+                font-size: 12px;
+                text-align:left;
+                font-weight:400;
+            }
+            .block{
+                display:flex;
+                width:100%;
+            .select-field {
+                margin:0px 21px 40px 0px !important;
+                
+                select{
+                    width:220px;
+                    height:36px;
+                    background-color: #eef3f7;
+                    outline:none;
+                    font-size:10px !important;
+                    color: #08425c;
+                }
+            }
+            .bizType {
+                .optChecked {
+                  background: #006c80;
+                  color: #fff !important;
+                  span {
+                    color: #fff;
+                  }
+                }
+                .form-group {
+                  flex-direction: unset !important;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+          
+                  label {
+                    cursor: pointer;
+                    padding: 0;
+                    margin: 0 0 5px;
+                  }
+                }
+                .select-option.form-group {
+                  width: 100% !important;
+                  select {
+                    background: #ffffff;
+                    border-bottom: none !important;
+                    border-radius: 0;
+                    border: 0;
+                    color: #353535 !important;
+                    font-size: 14px;
+                  }
+                }
+              }
+              .statesWrap {
+                .mb-4.form-group {
+                  display: block !important;
+                }
+              }
+            .date-picker{
+                flex-direction: column;
+                margin: 0px 54px 6px 0px !important;
+            }
+            
+            .form-element{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                margin:0px 43px 0px 0px;
+                input,.mb-3{
+                    width: 100%;
+                    text-align:left;
+                    
+                }
+                .form-select{
+                    border-radius: 2px;
+                }
+                input,.form-select{
+                    font-size: 12px;
+                    padding-right: 10PX;
+                    option{
+                        text-transform: capitalize;
+                    }
+                }
+                input{
+                    padding-right: 30px;
+                    background-color: #eef3f7;
+                    border-radius: 0;
+                    color: #08425c;
+                    border-bottom: 1.2px solid #1f63a7!important;
+                    border: 0;
+                    outline:0;
+                    
+                }
+                input:focus{
+                    // border: 4px solid #0091ff66 !important;
+                }
+                i{
+                    font-weight: 300;
+                }
+                .error-panel {
+                    margin-top: 26px;
+                    height: 26.78px;
+                    width: 100%;
+                    font-size: 10px;
+                    background-color: #F3F3F3;
+                    padding-left: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-weight: 500;
+                    div{
+                        margin-left: 5px;
+                    }
+                    img{
+                        margin-left: 5px;
+                        margin-bottom: 2px;
+                    }
+                    .message{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        align-items: center;
+                    }
+                  }
+                  .success-message{
+                    display: block;
+                    color:#296F3E !important;
+                    background-color: #DEF6E5 !important;
+                  }
+                  .error-message{display: block;
+                    color:#8B2A2A;      
+                    background-color: #F6DEDE
+                  }
+                  .show{
+                    position: absolute;
+                    cursor: pointer;
+                    bottom: 30px;
+                    right: 10px;
+                    width: 12px;
+                    height: 89px;
+                }
+            }
+        }
+            .buttonwrap{
+                display: flex;
+        
+                button{
+                    margin: 30px auto;
+                    border-radius: 15px;
+                    border: none;
+                    color: $white;
+                    font-size: 13px;
+                    width: 110px;
+                    padding: 5px 10px 5px 10px;
+                    background-color: #404A56;
+                }
+                .green{
+                    background-color: #5D8C57;
+                }
+                .purple{
+                    background-color:#77578C !important;
+                }
+        
+            }
+            .credential-wrapper{
+                display: flex;
+                justify-content: space-between;
+                .fields-wrapper{
+                    width: 200px;
+                }
+            }
+            .validation-container{
+                font-size: 11px;
+                margin-top: 12px;
+                padding: 12px;
+                div{
+                    margin:0px 0px 0px 4px;
+                }
+                .errorContainer{
+                    width: 195px;
+                    margin-top: 10px;
+                    .error-element{
+                        display: flex;
+                        align-items: center;
+                        margin:0px 0px 0px 15px;
+                        .dot{
+                            height: 7px;
+                            width: 7px;
+                            border-radius: 100%;
+                            margin-right: 5px;
+                            background-color: #08425C;
+                        }
+                        img{
+                            height: 7px;
+                            width: 7px;
+                            padding: 0px;
+                            margin: 0px 5px 0px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

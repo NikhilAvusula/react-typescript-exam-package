@@ -1,0 +1,400 @@
+@import "../CommonImports/main.scss";
+
+.switch{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ECF0F5;
+  border-radius: 19px;
+  height: 37px;
+  width: 230px;
+  margin-top: 15px;
+  button{
+    border: none;
+  }
+  .optSelected{
+      width: 140px;
+      border-radius: 18.59px;
+      background-color: #1C7BC3;
+      color:$white;
+      font-weight: 500;
+  }
+  .optNotSelected{
+    text-align: center;
+      width: 100px;
+      border-radius: 19px;
+      background-color:transparent;
+      color: #304258 !important;
+  }
+}
+.spinner{
+  z-index: 5000;
+  background-color:rgb(197, 204, 206);
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  padding: 0;
+  text-align: center;
+  padding-top: 20%;
+  left:0;
+  top:0;
+}
+
+.spinner-border {
+  display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -0.125em;
+    border: 2em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: 2s linear infinite spinner-border;
+  }
+label {
+  display: block;
+  color: $primary-color-dark;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-bottom: 10px;
+  &.hideLabel {
+    visibility: hidden;
+  }
+}
+
+.checkMainContainer label {
+  margin-bottom: 0.5rem;
+}
+
+.input-field ,select {
+  height: 60px;
+  font-size: 14px;
+}
+select{
+  border-radius: 2px !important;
+}
+
+@include input-form();
+
+.displayValueContainer {
+  height: 14px;
+  width: inherit;
+  color: $opt-selected-color;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selectField {
+  height: 30px !important;
+  font-size: 14px;
+
+  .selectField__control {
+    height: 30px !important;
+    min-height: 30px !important;
+    border-radius: 2px;
+    align-items: flex-start;
+    font-size: 14px;
+
+    .selectField__value-container, .selectField__input-container, .selectField__input, .selectField__indicators {
+      height: 30px !important;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    .selectField__value-container {
+      padding: 0px 8px !important;
+      font-size: 14px;
+    }
+  }
+}
+
+.selectField__menu {
+  min-width: 15vw;
+}
+
+.multiSelectField{
+  .form-control{
+    padding:0px 8px;
+    border-radius:2px;
+    height:24px;
+  }
+  .dropdown-item{
+    font-size:12px;
+  }
+  .rbt-token-label{
+    font-size:12px;
+  }
+}
+
+.datePickerContainer {
+  position: relative;
+  font-size: 14px;
+
+  .calenderIcon {
+    position: absolute;
+    bottom: 11px;
+    left: 139px;
+    pointer-events: none;
+  }
+}
+
+.react-datepicker-wrapper {
+  input {
+    background-image: url("../../images/calendar.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 12px);
+    background-position-y: 9px;
+    text-align: right !important;
+    padding-right: 40px;
+    font-size: 14px;
+  }
+
+  input:disabled {
+    background: $gray-200;
+    background-image: url("../../images/calendar.svg");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 12px);
+    background-position-y: 9px;
+    text-align: right !important;
+    padding-right: 40px;
+    font-size: 14px;
+  }
+}
+
+.switchContainer {
+  @include display-flex(null, flex-start, center);
+
+  .switchLabels {
+    font-size: 12px;
+    margin: 4px;
+    font-weight: 500;    
+    margin-bottom: 3px;
+    
+    &.checked {
+      color: $primary-color-dark;
+    }
+    &.unchecked {
+      color: $switch-inactive-color;
+    }
+  }
+
+  .react-switch-handle {
+    box-shadow: none !important;
+  }
+}
+
+h6.error.danger {
+  font-size: 10px;
+  color: $error-color;
+  margin-top: 4px;
+}
+
+.inputContainer {
+  @include display-flex(null, flex-start);
+}
+
+.fileUpload {
+  box-sizing: border-box;
+  height: 127px;
+  width: 369px;
+  border: 1.5px dotted rgba($color: $primary-color-light, $alpha: 1.0);
+  border-radius: 8px;
+  text-align: center;
+  padding: 1.5rem;
+
+  .fileInner {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.disabled {
+    background: $gray-200;
+  }
+
+  &.isDragAccept {
+    background: $gray-100;
+    border: 2px dotted rgba($color: $lot-sucess-btn-color, $alpha: 1.0) !important;
+  }
+
+  &.isDragReject {
+    background: $gray-100;
+    border: 2px dotted rgba($color: $error-color, $alpha: 1.0) !important;
+  }
+
+  .browse {
+    color: $nav-active-color;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 10px 0;
+    cursor:pointer;
+    .link {
+      color: $font-link-color;
+      text-decoration: underline;
+    }
+  }
+
+  .supports {
+    color: $primary-font-color;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 11px;
+  }
+}
+
+.fileUpload2{
+  padding: 0px;
+}
+
+.uploadedFiles {
+  overflow-y: auto;
+  height: 127px;
+
+  .files {
+    margin-left: 2rem;
+    min-height: 127px;
+    overflow-y: auto;
+    overflow-y: visible;
+    padding-right: 1.5rem;
+    
+    @include display-flex(column, center, center)
+  }
+
+  .dropdown-menu {
+    height: 30px;
+    min-width: 66px !important;
+    border-radius: 5px;
+    background-color: $white;
+    box-shadow: 0 2px 5px 0 rgba($color: $black, $alpha: .1);
+    border: none;
+
+    button.dropdown-item {
+      color: $error-color;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14px;
+    }
+  }
+
+  .fileName {
+    font-size: 14px;
+    margin: 0 10px;
+    @include word-break();
+  }
+
+  button.btn.btn-secondary {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 2rem;
+    img.menuIcon{
+      margin-left:10px;
+    }
+    
+    &:hover, &:focus {
+      background: none
+    }
+  }
+
+  .render-preview {
+    width: 100%;
+    @include display-flex();
+
+    p.details {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+button.optSelected.button.btn.btn-secondary {
+  height: 32px;
+  width: 125px;
+  border-radius: 0;
+  background-color: $primary-color-light;
+  border: 1px solid $primary-color-light;
+  color: $white;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+button.optNotSelected.button.btn.btn-secondary {
+  height: 32px;
+  width: 125px;
+  border-radius: 0;
+  background-color: $white;
+  border: 1px solid $primary-color-light;
+  color: $primary-color-light;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.checkOptionsContainer {
+  @include display-flex();
+
+  .check-panel.mb-3 {
+    height: 32px;
+    min-width: 200px;
+    border: 1px solid $gray-300;
+    border-radius: 2px;
+    background-color: $white;
+    padding: 7px;
+    margin: 0 10px;
+    margin-bottom: 0 !important;
+
+    label {
+      color: $primary-color-dark;
+      font-family: Roboto;
+      font-size: 12px;
+      margin-bottom: 0;
+      font-weight: normal;
+    }
+
+    input.form-check-input {
+      margin: 2px 10px 0 0;
+      border-radius: 50% !important;
+    }
+
+    input.form-check-input:focus {
+      border-color: $silver;
+      box-shadow: none;
+    }
+
+    &.optChecked {
+      background-color: $primary-color-light;
+      .form-check-input:checked{
+        background: none;
+        border: none;
+      }
+      .form-check-input:checked[type=checkbox] {
+        background-image: url("../../images/white-check.svg");
+      } 
+      label {
+        color: $white;
+      }
+    }
+  }
+}
+
+span.infoIcon {
+  position: relative ;
+  display: inline-block !important;
+}
+
+p.tooltiptextInfo {
+  color: white !important;
+  font-weight: 400 !important;
+}

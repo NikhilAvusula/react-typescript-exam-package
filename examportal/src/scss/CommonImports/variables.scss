@@ -1,0 +1,173 @@
+// Global settings
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// Color system
+$white: #FFFFFF !default;
+$gray-100: #f9f9f9 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #D2D2D2 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #8898aa !default;
+$gray-700: #5D5D5D !default;
+$gray-800: #32325d !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$purple: #6423A7 !default;
+$silver: #DADBDD !default;
+
+$primary-color: #254874 !default;
+$primary-color-dark: #304258 !default;
+$primary-color-light: #4770A3 !default;
+$primary-color-lighter: #6C97CD !default;
+$primary-font-color: #2A2A2A !default;
+$secondary-font-color: #323232 !default;
+
+$primary-btn-bg: $primary-color !default;
+$primary-btn-bg-dark: $primary-color-dark !default;
+$primary-btn-bg-light: #404A56 !default;
+
+$primary-bg-color-light: rgba(37, 72, 116, 0.1) !default;
+
+$header-bg: $primary-color-dark !default;
+$footer-bg: $primary-color-dark;
+
+$success-color: #31762C !default;
+$success-bg-color: #DEF6E5 !default; // rgba(55,165,37,0.1) #CAF1C5 !default;
+
+$error-color: #8B2A2A !default;
+$error-color-dark: #AF1212 !default;
+$error-bg-color: #F6DEDE !default; // #F6DEDE !default;
+
+$landing-hold-color:#F2DEC9!default;
+$hold-color: #C77E33 !default;
+$hold-bg-color: #F2DEC9 !default;
+
+$update-color: #7554B4 !default;
+$update-bg-color: rgba(148,108,205,0.1) !default;
+
+//Lot page option bg colors
+$option1:rgba(108,151,205,0.1);
+$option2:rgba(71,112,163,0.1);
+$option3:rgba(37,72,116,0.1);
+
+
+// Nav colors
+$nav-active-color:#13609A;
+$nav-inactive-color:#639BC4;
+$nav-border-color:#7EB362; 
+$nav-border-color-supervisor:#DB9048;
+
+$input-font-color: #08425c !default;
+$input-border-color: #D2D2D2 !default;
+
+
+// font and lengths
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 600 !default;
+$font-weight-extra-bold: 700 !default;
+
+$paragraph-font-size: 1rem !default;
+$paragraph-font-weight: 300 !default;
+$paragraph-line-height: 1.7 !default;
+
+$lead-font-size: ($paragraph-font-size * 1.25);
+$lead-font-weight: 400 !default;
+$small-font-size: 80% !default;
+$text-muted: $gray-600 !default;
+
+//
+$link-color: #5B77D8 !default;
+$font-light-color: #B1B1B1 !default;
+$opt-selected-color: #215DA6 !default;
+$text-disabled: #F3F3F3 !default;
+
+$font-link-color: #0091FF !default;
+
+
+// variables need to generalized -
+$stage-tab-border: #3082BF !default;
+$stage-tab-bottom-border: #8BBEE5 !default;
+
+$stage-type-bg: #E8F0F7 !default;
+$stage-type-color: #09436F !default;
+
+$required-color: #AE2727 !default; 
+$version-number-bg: #E5EEF5 !default;
+$text-color-light: #616161 !default;
+$version-header-bg: #E6ECF4 !default;
+
+$search-item-bg: #F8F9FC !default;
+$search-btn-bg: #1D559B !default;
+
+$lot-stages-bg: #F1F1F1 !default;
+$lot-stages-id-color: #C9C9C9 !default;
+
+$success-stage-bg-color: #D7EFC9 !default;
+$success-stage-color: #47742D !default;
+
+$review-bg-color: #E1D5E8 !default;
+$review-color: #43236C !default;
+
+$upload-bg-color: #805EA7 !default;
+$exception-bg-color: #404B59 !default;
+
+$lot-count-color: #1C7BC3 !default;
+$lot-table-cell: #5F5F5F !default;
+$lot-table-cell-dark: #3B495E !default;
+$lot-product-color:#204D6F !default;
+
+$manufacturing-color: #D2E2EE !default;
+$packaging-color: #D3D2EE !default;
+
+$void-btn-color: #972424 !default;
+
+$lots-selection-bg-color: #DAE8EE !default;
+
+$lots-scan-bg-color:#586370 !default;
+
+$overlay-bg-color: rgba(3,17,33,0.65) !default;
+
+$success-overlay-bg-color: #72ab35 !default;
+$lot-sucess-btn-color: #518D4D !default;
+
+$close-lot-color: #36649D !default;
+$force-close-lot-color: #364352 !default;
+
+$close-lot-bg-color: #DCDCDC !default;
+
+$dashboard-colors-1: #397E75 !default;
+$dashboard-colors-2: #F1F9F8 !default;
+$dashboard-font-1: #586370 !default;
+
+$tab-content-bg: #F4F6FA !default;
+$audit-btn-bg: #EEEEEE !default;
+$download-btn-bg: #CE995B !default;
+$audit-table-head: #EDF0F4 !default;
+$audit-head-color: #212E3E !default;
+$audit-body-color: #373737 !default;
+
+// reports - colors 
+$reports-header-bg: $force-close-lot-color !default; // #364352
+$reports-th-border: #a3c6e7 !default;
+$reports-tr-bg: #deeaf6 !default;
+$reports-closed-bg: #eac200 !default;
+$switch-inactive-color: #6E7277 !default;
+
+$lot-close-color: #287211 !default;
+$lot-closed-color: #2E2E2E !default;
+$lot-canceled-color:  #41289A !default;
+$lot-deleted-color: #9F2626 !default;
+
+$status-active-color: #EAF6E9 !default;
+$inactive-bg-color: #F6F6F6 !default;
+$inactive-color: #A1A1A1 !default;
+
+$lot-details-report: #f2f2f2 !default;
